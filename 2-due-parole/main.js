@@ -8,30 +8,35 @@
 */
 
 // INPUT
+debugger;
+
 let a = prompt("Inserisci la prima parola");
 console.log(`L'utente ha inserito: ${a}`);
 
 let b = prompt("Inserisci la seconda parola");
 console.log(`L'utente ha inserito: ${b}`);
 
-// ELABORAZIONE
-if (a == null || b == null) {
+let msg = "";
 
-    console.error("Non hai inserito tutti i dati!"); //OUTPUT
+// ELABORAZIONE
+if (!a || !b) {
+
+    msg = "Non hai inserito tutti i dati!"
 
 } else if (a.length > b.length) {
 
-    console.log(`${a} è più lunga di ${b}`); //OUTPUT
+    msg = `${a} è più lunga di ${b}`;
 
 } else if (a.length < b.length) {
 
-    console.log(`${b} è più lunga di ${a}`); //OUTPUT
+    msg = `${b} è più lunga di ${a}`;
 
 } else {
 
-    console.log(`Le parole sono lunghe uguali`); //OUTPUT
+    msg = `Le parole sono lunghe uguali`;
 
 }
 
-//FINE
+//OUTPUT
+console.log(msg);
 console.log("Programma terminato");
