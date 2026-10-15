@@ -30,3 +30,16 @@ function calcolaEta(annoDiNascita) {
 // const x = 1;
 // const y = 2;
 // somma( x, y );
+
+function x(num) {
+    return num * 2;
+}
+
+const y = function (num) {
+    return num * 2;
+}
+
+const z = (num) => {
+    return num * 2;
+}
+
